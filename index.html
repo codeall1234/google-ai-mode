@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Gemini Button</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    /* Center the button */
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f5f5f5; /* Light grey background */
+      font-family: Arial, sans-serif;
+    }
+
+    /* Button styling */
+    #google-button {
+      background: linear-gradient(90deg, #4285F4, #34A853, #FBBC05, #EA4335); /* Google Gemini-like theme */
+      border: none;
+      border-radius: 12px;
+      color: white;
+      font-size: 16px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    #google-button:hover {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button id="google-button">Click Me</button>
+  </div>
+
+  <script>
+    // JavaScript to handle button redirection
+    document.getElementById('google-button').addEventListener('click', function() {
+      window.location.href = "https://www.google.com/search?udm=50&sa=X&ved=0ahUKEwjltfvh1MeOAxW8F1kFHT6RKTUQoo4PCAQ&biw=428&bih=737&dpr=3";
+    });
+  </script>
+</body>
+</html>
